@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     width: 100,
     height: 100,
     alignSelf: "flex-start",
-    marginLeft: 155
+    marginLeft: 150
   },
 
   titleText: {
