@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/ses2b_helps_app/main.m \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/ses2b_helps_app/AppDelegate.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/UMReactNativeAdapter/UMModuleRegistryAdapter.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/React/React/RCTBridgeModule.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/React/React/RCTDefines.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/React/RCTInspectorDevServerHelper.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/React/RCTPackagerConnection.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/UMCore/UMModuleRegistryProvider.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/UMCore/UMModuleRegistry.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/UMCore/UMInternalModule.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/UMCore/UMDefines.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/UMCore/UMExportedModule.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/UMCore/UMViewManager.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/UMCore/UMModuleRegistryDelegate.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/UMCore/UMSingletonModule.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/React/React/RCTBridgeDelegate.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/React/React/RCTJavaScriptLoader.h \
+  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Headers/Public/UMCore/UMAppDelegateWrapper.h
