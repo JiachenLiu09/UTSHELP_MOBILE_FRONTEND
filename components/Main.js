@@ -1,18 +1,18 @@
 const users = [
     {
-        name: 'brynn',
-        avatar: 'https://cdn.applysquare.net/storage/tmp/qa/thread/DmMz5AkpU.jpg'
+        date: '23/10/19',
+        room: 'CB11.00.00'
     },
     {
-        name: 'brynn1',
-        avatar: 'https://cdn.applysquare.net/storage/tmp/qa/thread/DmMz5AkpU.jpg'
+        date: '23/10/19',
+        room: 'CB11.00.00'
     },
 ]
 
 
 import React, { Fragment } from 'react';
 import { View, Text, Image } from 'react-native'
-import { Card, ListItem, Button, Icon } from 'react-native-elements'
+import { Card, ListItem, Button, Icon, TouchableWithoutFeedback } from 'react-native-elements'
 import {
     SafeAreaView,
     StyleSheet,
@@ -34,9 +34,7 @@ export default class Main extends React.Component {
 
             <View style={styles.container}>
 
-                <View style={styles.header}>
-                    <Text style={styles.headerText}>- Noter -</Text>
-                </View>
+                
 
                 <ScrollView style={flex = 1}>
                     <Card title="Select Available Day">
@@ -46,17 +44,18 @@ export default class Main extends React.Component {
                                 return (
 
                                     <View key={i} style={{height: 60, flex: 1, flexDirection: 'row' }}>
-                                        <Image
-                                            style={{ width: 50, height: 50, position: 'relative' }}
-                                            resizeMode="cover"
-                                            source={{ uri: u.avatar }}
-
+                                        <Button
+                                            style={{ width: 50, height: 50, position: 'relative', backgroundColor: 'yellow' }}
+                                            title={u.room}
+                                            disabled
+                                            color='yellow'
                                         />
-                                        <Text style={{fontSize: 20, marginLeft: 20,}}>{u.name}</Text>
+                                        
+                                        <Text style={{fontSize: 20, marginLeft: 30,marginTop: 5}}>{u.date}</Text>
                                         <Button
                                             icon={<Icon name='code' color='#ffffff' />}
                                             backgroundColor='#03A9F4'
-                                            buttonStyle={{ borderRadius: 0, marginLeft: 50, marginRight: 0, marginBottom: 0, position: 'absolute', alignItems: 'flex-end' }}
+                                            buttonStyle={{ borderRadius: 0, marginLeft: 40, marginRight: 0, marginBottom: 0, position: 'absolute', alignItems: 'flex-end' }}
                                             title='Book' />
                                     </View>
                                 );
