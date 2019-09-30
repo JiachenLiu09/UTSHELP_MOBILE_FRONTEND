@@ -28,7 +28,7 @@ import {
     ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-export default class Main extends React.Component {
+export default class Date extends React.Component {
     render() {
         return (
 
@@ -56,7 +56,8 @@ export default class Main extends React.Component {
                                             icon={<Icon name='code' color='#ffffff' />}
                                             backgroundColor='#03A9F4'
                                             buttonStyle={{ borderRadius: 0, marginLeft: 40, marginRight: 0, marginBottom: 0, position: 'absolute', alignItems: 'flex-end' }}
-                                            title='Book' />
+                                            title='Book'
+                                            onPress={() => this.props.navigation.navigate('Confirm')} />
                                     </View>
                                 );
                             })
