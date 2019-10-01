@@ -31,6 +31,8 @@ target 'ses2b_helps_app' do
 
   use_unimodules!
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'ses2b_helps_appTests' do
     inherit! :search_paths
   end

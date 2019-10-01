@@ -1,11 +1,11 @@
 dependencies: \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMModuleRegistryProvider/UMModuleRegistryProvider.m \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Target\ Support\ Files/UMCore/UMCore-prefix.pch \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMSingletonModule.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMModuleRegistryProvider/UMModuleRegistryProvider.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMModuleRegistry/UMModuleRegistry.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/Protocols/UMInternalModule.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMDefines.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMExportedModule.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMViewManager.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMModuleRegistry/UMModuleRegistryDelegate.h
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMModuleRegistryProvider/UMModuleRegistryProvider.m \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Target\ Support\ Files/UMCore/UMCore-prefix.pch \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMSingletonModule.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMModuleRegistryProvider/UMModuleRegistryProvider.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMModuleRegistry/UMModuleRegistry.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/Protocols/UMInternalModule.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMDefines.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMExportedModule.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMViewManager.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/@unimodules/core/ios/UMCore/UMModuleRegistry/UMModuleRegistryDelegate.h

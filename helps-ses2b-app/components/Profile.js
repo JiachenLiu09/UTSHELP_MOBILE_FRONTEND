@@ -66,8 +66,8 @@ export default class Profile extends Component {
 
         <View style={styles.component}>
         <Text style={styles.profileText}>Student Id: {this.state.studentId}</Text>
-          <Text style={styles.profileText}>Fisrtname: {this.state.firstName}</Text>
-          <Text style={styles.profileText}>Lastname: {this.state.lastName}</Text>
+          <Text style={styles.profileText}>First name: {this.state.firstName}</Text>
+          <Text style={styles.profileText}>Last name: {this.state.lastName}</Text>
          
         </View>
 
@@ -108,8 +108,6 @@ export default class Profile extends Component {
             </TouchableHighlight>
           </View>
         </ScrollView>
-
-        <Text>Navigation Bar</Text>
       </View>
     );
   }

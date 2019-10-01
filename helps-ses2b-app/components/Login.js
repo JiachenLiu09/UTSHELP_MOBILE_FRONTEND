@@ -16,7 +16,7 @@ export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      studentid: "",
+      studentId: "",
       password: ""
     }
     this._loginSuccessPushApp = this._loginSuccessPushApp.bind(this);
@@ -33,18 +33,19 @@ export default class Login extends Component {
             'Content-Type':'application/json',
         },
         body:JSON.stringify({
-            studentId:this.state.studentid,
+            studentId:this.state.studentId,
            password:this.state.password,
         })
     })
     .then((response) => response.json())
     .then((responseJson) => {
+      console.log(responseJson);
       if(responseJson.studentId != 0){
         this._loginSuccessPushApp();
       } else {
         Alert.alert(
           "Fail",
-          'Invaild email or password.',
+          'Invalid email or password.',
           [{ text: "OK", onPress: () => console.log("OK Pressed!") }]
         );
       }
@@ -55,12 +56,12 @@ export default class Login extends Component {
   }
 
   _loginSuccessPushApp = async () =>{
-    await AsyncStorage.setItem('studentId', this.state.studentid);
+    await AsyncStorage.setItem('studentId', this.state.studentId);
     await AsyncStorage.setItem('password', this.state.password);
     AsyncStorage.getItem('studentId').then(
       (message) => {console.log(message)}
     )
-    this.props.navigation.navigate('Profile');
+    this.props.navigation.navigate('HomePage');
    }
 
   render() {
@@ -77,9 +78,9 @@ export default class Login extends Component {
         <Text style={styles.titleText}>HELPS</Text>
 
         <TextInput
-          value={this.state.studentid}
+          value={this.state.studentId}
           keyboardType="number-pad"
-          onChangeText={studentid => this.setState({ studentid })}
+          onChangeText={studentId => this.setState({ studentId })}
           placeholder="Student ID"
           placeholderTextColor="grey"
           style={styles.input}

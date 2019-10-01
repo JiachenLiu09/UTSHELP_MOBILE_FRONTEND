@@ -1,18 +1,18 @@
 dependencies: \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.cpp \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Target\ Support\ Files/yoga/yoga-prefix.pch \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGMacros.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGValue.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/Utils.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGNode.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGConfig.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGMarker.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/Yoga-internal.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/CompactValue.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGLayout.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGFloatOptional.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGStyle.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGNodePrint.h \
-  /Users/jiachenliu/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/instrumentation.h
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.cpp \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/ios/Pods/Target\ Support\ Files/yoga/yoga-prefix.pch \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGMacros.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGValue.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/Utils.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGNode.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGConfig.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGMarker.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/Yoga-internal.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/CompactValue.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGLayout.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGFloatOptional.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGStyle.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/YGNodePrint.h \
+  /Users/pie/Developer/Project/ReactNativeProject/UTSHELP_MOBILE_FRONTEND/helps-ses2b-app/node_modules/react-native/ReactCommon/yoga/yoga/instrumentation.h
