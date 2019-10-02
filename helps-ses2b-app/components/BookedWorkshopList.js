@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { FlatList, StyleSheet, Text, View, AsyncStorage } from 'react-native';
 
 export default class FlatListBasics extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ export default class FlatListBasics extends Component {
       (data) => {this.setState({
         studentId: data
       })}
-    ).then(
+    );
     fetch("http://localhost:8888/bookedWorkshops",{
         method:'POST',
         mode: "cors",
@@ -28,24 +28,31 @@ export default class FlatListBasics extends Component {
     })
     .then((response) => response.json())
     .then((responseJson) => {
-      console.log(responseJson);
+      // let data = []; 
+      // for(let i=0,j=responseJson.length;i<j;i++){
+      //     let item = [];
+      //     item.push(responseJson[i].name);
+      //     data.push(item); 
+      //     console.log(data); 
+      // }
       this.setState({
-        dataSource: responseJson.body
+        dataSource: responseJson
       })
     })
     .catch((error) => {
       console.log(error);
       throw error;
-    }))
+    })
   }
   render() {
+    _extraUniqueKey =(item ,index) => { return "index"+index+item; }
     return (
       <View style={styles.container}>
         <FlatList
           data={
             this.state.dataSource
           }
-          renderItem={({item}) => <Text style={styles.item}>{item.workshopName}</Text>}
+          renderItem={({item}) => <Text style={styles.item}>{item.name}</Text>}
         />
       </View>
     );

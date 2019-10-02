@@ -10,7 +10,6 @@ import {
   Linking,
   AsyncStorage
 } from 'react-native';
-import SelectedWorkshop from './SelectedWorkshop';
 
 export default class Profile extends Component {
   constructor(props) {
