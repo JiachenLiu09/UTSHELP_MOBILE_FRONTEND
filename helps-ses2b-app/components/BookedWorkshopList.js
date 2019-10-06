@@ -28,13 +28,6 @@ export default class FlatListBasics extends Component {
     })
     .then((response) => response.json())
     .then((responseJson) => {
-      // let data = []; 
-      // for(let i=0,j=responseJson.length;i<j;i++){
-      //     let item = [];
-      //     item.push(responseJson[i].name);
-      //     data.push(item); 
-      //     console.log(data); 
-      // }
       this.setState({
         dataSource: responseJson
       })

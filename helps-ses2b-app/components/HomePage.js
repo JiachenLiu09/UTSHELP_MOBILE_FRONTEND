@@ -6,6 +6,8 @@ import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Profile from "./Profile";
 import { Colors } from "react-native-paper";
 import FlatListBasics from "./BookedWorkshopList";
+import Booking from "./AddWorkshop";
+import AddWorkshop from "./AddWorkshop";
 
 const tabBarIcon = name => ({ tintColor }) => (
   <FontAwesome
@@ -44,16 +46,14 @@ class SelectWorkshops extends React.Component {
   };
   render() {
     return (
-      <View>
-        <Text>To be filled...</Text>
-      </View>
+      <Booking />
     );
   }
 };
 export default createAppContainer(
   createMaterialBottomTabNavigator({
     My: { screen: MyInformation },
-    View: {screen: BookedWorkshops},
-    Select: { screen: SelectWorkshops }
+    View: {screen: BookedWorkshops },
+    Select: { screen: AddWorkshop }
   })
 );

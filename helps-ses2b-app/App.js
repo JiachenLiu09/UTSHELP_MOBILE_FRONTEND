@@ -1,11 +1,10 @@
 import Login from './components/Login';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-import Profile from './components/Profile';
 import HomePage from './components/HomePage';
 
 const AppNavigator = createStackNavigator({
   Home: { screen: Login },
-  HomePage: { screen:HomePage }
+  HomePage: { screen : HomePage }
 })
 
 export default createAppContainer(AppNavigator);

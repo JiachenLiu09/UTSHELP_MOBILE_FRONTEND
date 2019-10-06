@@ -34,7 +34,7 @@ export default class Login extends Component {
         },
         body:JSON.stringify({
             studentId:this.state.studentId,
-           password:this.state.password,
+            password:this.state.password,
         })
     })
     .then((response) => response.json())
