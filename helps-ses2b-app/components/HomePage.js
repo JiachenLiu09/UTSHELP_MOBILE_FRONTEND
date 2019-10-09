@@ -1,13 +1,10 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
 import { createAppContainer } from "react-navigation";
-import { createMaterialBottomTabNavigator } from "react-navigation-material-bottom-tabs";
+import { createBottomTabNavigator } from 'react-navigation-tabs';
 import FontAwesome from "react-native-vector-icons/FontAwesome";
-import Profile from "./Profile";
-import { Colors } from "react-native-paper";
-import FlatListBasics from "./BookedWorkshopList";
-import Booking from "./AddWorkshop";
-import AddWorkshop from "./AddWorkshop";
+import AddWorkshop from "./AddWorkshop_Home";
+import CancelWorkshops from "./CancelWorkshops_Home";
+import Profile_Home from "./Profile_Home";
 
 const tabBarIcon = name => ({ tintColor }) => (
   <FontAwesome
@@ -17,43 +14,45 @@ const tabBarIcon = name => ({ tintColor }) => (
     size={22}
   />
 );
-class MyInformation extends React.Component {
+class Profile extends React.Component {
     static navigationOptions = {
       tabBarIcon: tabBarIcon('user'),
       tabBarLabel: 'My Profile',
     };
     render() {
       return (
-        <Profile />
+        <Profile_Home />
       );
     }
 };
-class BookedWorkshops extends React.Component {
+class Cancel extends React.Component {
   static navigationOptions = {
     tabBarIcon: tabBarIcon('book'),
     tabBarLabel:'View my workshops'
   };
   render() {
     return (
-      <FlatListBasics />
+      <CancelWorkshops />
     );
   }
 };
-class SelectWorkshops extends React.Component {
+class Book extends React.Component {
   static navigationOptions = {
     tabBarIcon: tabBarIcon('plus'),
     tabBarLabel:'Book workshops'
   };
   render() {
     return (
-      <Booking />
+      <AddWorkshop />
     );
   }
 };
-export default createAppContainer(
-  createMaterialBottomTabNavigator({
-    My: { screen: MyInformation },
-    View: {screen: BookedWorkshops },
-    Select: { screen: AddWorkshop }
-  })
+
+const HomeTab = createBottomTabNavigator({
+    My: { screen: Profile },
+    View: {screen: Cancel },
+    Select: { screen: Book }
+  }
 );
+
+export default createAppContainer(HomeTab);

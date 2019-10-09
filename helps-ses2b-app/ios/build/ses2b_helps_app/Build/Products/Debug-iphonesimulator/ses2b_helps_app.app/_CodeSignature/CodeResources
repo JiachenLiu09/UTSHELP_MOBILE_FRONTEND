@@ -103,7 +103,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kZHPRXf0t4wxvtYhPjKh6Y67S60=
+		D9T6UgIRHwmsR0WxnP9GJ8JWAQs=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -135,15 +135,15 @@
 		</data>
 		<key>PlugIns/ses2b_helps_appTests.xctest/Info.plist</key>
 		<data>
-		b49hE14qtm7Ve6CWqvwyqVz5hq4=
+		FmBZRVbd/ReG7JoJ5ROBq2J4rXw=
 		</data>
 		<key>PlugIns/ses2b_helps_appTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		68V1oano7vtHzL6v/lYzdY2kD5M=
+		aMQX8hh/ikSS5rp2CC4bWAhzwQs=
 		</data>
 		<key>PlugIns/ses2b_helps_appTests.xctest/ses2b_helps_appTests</key>
 		<data>
-		l+Mi+qotdTzWYGnSnBzXr46ajJk=
+		DIHN8K5xH1T/n5rcxZ+WAQKRj1Y=
 		</data>
 		<key>SimpleLineIcons.ttf</key>
 		<data>
@@ -481,33 +481,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b49hE14qtm7Ve6CWqvwyqVz5hq4=
+			FmBZRVbd/ReG7JoJ5ROBq2J4rXw=
 			</data>
 			<key>hash2</key>
 			<data>
-			oswdutaxBKm+7cK4+rdpM2la3ygSiXstC+qEZCprdKQ=
+			6lorF33ulD64LG0YF9uUvcgYjHBvztsJQawga8+OGik=
 			</data>
 		</dict>
 		<key>PlugIns/ses2b_helps_appTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			68V1oano7vtHzL6v/lYzdY2kD5M=
+			aMQX8hh/ikSS5rp2CC4bWAhzwQs=
 			</data>
 			<key>hash2</key>
 			<data>
-			fsgC6BAatbG69SAkagwWvJwdb8/g8QUC4uY6vfy4T2w=
+			7eIhOdv9yAOGfd1DrNjFHrGOyc7sSZQ7OeLaVCYMVq4=
 			</data>
 		</dict>
 		<key>PlugIns/ses2b_helps_appTests.xctest/ses2b_helps_appTests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l+Mi+qotdTzWYGnSnBzXr46ajJk=
+			DIHN8K5xH1T/n5rcxZ+WAQKRj1Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			mnoEYgODAPJyES6vithGUS1CydatwQTpKVE0hteNU7U=
+			0HlNw3kpMMEEwqgNGDIFlCeD+uDFXJqT6H1R9f96uMo=
 			</data>
 		</dict>
 		<key>SimpleLineIcons.ttf</key>

@@ -25,7 +25,7 @@ export default class Login extends Component {
 
   _signInAsyncAction = async () => {
     
-    fetch("http://localhost:8888/login",{
+    fetch("http://utshelpmobileserver-env.eemrgf7eub.us-east-2.elasticbeanstalk.com:8888/login",{
         method:'POST',
         mode: "cors",
         headers:{
@@ -44,7 +44,7 @@ export default class Login extends Component {
         this._loginSuccessPushApp();
       } else {
         Alert.alert(
-          "Fail",
+          "Login Failed",
           'Invalid email or password.',
           [{ text: "OK", onPress: () => console.log("OK Pressed!") }]
         );
@@ -61,7 +61,7 @@ export default class Login extends Component {
     AsyncStorage.getItem('studentId').then(
       (message) => {console.log(message)}
     )
-    this.props.navigation.navigate('HomePage');
+    this.props.navigation.replace('HomePage');
    }
 
   render() {
