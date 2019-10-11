@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {View, Text, Image, DeviceEventEmitter} from 'react-native';
+import moment from 'moment';
 import {
   Card,
   //ListItem,
@@ -62,10 +63,7 @@ export default class Workshops extends React.Component {
                         Place available: {u.placeAvailable}
                       </Text>
                       <Text>
-                        Time: {u.startDate} - {u.endDate}
-                      </Text>
-                      <Text>
-                        Description: {u.description}
+                        Time: {moment(parseInt(u.startDate)).format('YYYY-MM-DD HH:mm')} - {moment(parseInt(u.endDate)).format('YYYY-MM-DD HH:mm')}
                       </Text>
                       <Button
                         icon={<Icon name="code" color="#ffffff" />}

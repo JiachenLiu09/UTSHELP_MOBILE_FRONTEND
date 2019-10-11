@@ -10,6 +10,7 @@ import {
 } from 'react-native-elements';
 import {SafeAreaView, StyleSheet, ScrollView, StatusBar} from 'react-native';
 import ActionButton from 'react-native-action-button';
+import moment from 'moment';
 
 export default class BookedWorkshopsPage extends React.Component {
   constructor(props) {
@@ -71,10 +72,7 @@ export default class BookedWorkshopsPage extends React.Component {
                         Place available: {u.placeAvailable}
                       </Text>
                       <Text>
-                        Time: {u.startDate} - {u.endDate}
-                      </Text>
-                      <Text>
-                        Description: {u.description}
+                        Time: {moment(parseInt(u.startDate)).format('YYYY-MM-DD HH:mm')} - {moment(parseInt(u.endDate)).format('YYYY-MM-DD HH:mm')}
                       </Text>
                       <Button
                         icon={<Icon name="code" color="#ffffff" />}
