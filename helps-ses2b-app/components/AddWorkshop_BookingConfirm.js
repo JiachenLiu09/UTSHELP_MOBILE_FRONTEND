@@ -18,6 +18,10 @@ export default class BooingConfirmScreen extends React.Component {
       placeAvailable: '',
       roomId: '',
       skillSetId: '',
+      skillSetName: '',
+      roomCampus: '',
+      roomLevel: '',
+      roomNumber: ''
     }
   }
 
@@ -27,7 +31,7 @@ export default class BooingConfirmScreen extends React.Component {
         studentId: data
       })}
     )
-    fetch("http://utshelpmobileserver-env.eemrgf7eub.us-east-2.elasticbeanstalk.com:8888/workshopDetail",{
+    await fetch("http://utshelpmobileserver-env.eemrgf7eub.us-east-2.elasticbeanstalk.com:8888/workshopDetail",{
         method:'POST',
         mode: "cors",
         headers:{
@@ -48,6 +52,52 @@ export default class BooingConfirmScreen extends React.Component {
         placeAvailable: responseJson.placeAvailable,
         roomId: responseJson.roomId,
         skillSetId: responseJson.skillSetId
+      })
+    })
+    .catch((error) => {
+      console.log(error);
+      throw error;
+    })
+
+    await fetch("http://utshelpmobileserver-env.eemrgf7eub.us-east-2.elasticbeanstalk.com:8888/skillSet",{
+        method:'POST',
+        mode: "cors",
+        headers:{
+            Accept:'application/json',
+            'Content-Type':'application/json',
+        },
+        body:JSON.stringify({
+          skillSetId: this.state.skillSetId
+        })
+    })
+    .then((response) => response.json())
+    .then((responseJson) => {
+      this.setState({
+        skillSetName: responseJson.name
+      })
+    })
+    .catch((error) => {
+      console.log(error);
+      throw error;
+    })
+
+    fetch("http://utshelpmobileserver-env.eemrgf7eub.us-east-2.elasticbeanstalk.com:8888/room",{
+        method:'POST',
+        mode: "cors",
+        headers:{
+            Accept:'application/json',
+            'Content-Type':'application/json',
+        },
+        body:JSON.stringify({
+          roomId: this.state.roomId
+        })
+    })
+    .then((response) => response.json())
+    .then((responseJson) => {
+      this.setState({
+        roomCampus: responseJson.campus,
+        roomLevel: responseJson.level,
+        roomNumber: responseJson.roomNumber
       })
     })
     .catch((error) => {
@@ -99,11 +149,11 @@ export default class BooingConfirmScreen extends React.Component {
         <ScrollView vertical>
           <View style={styles.component}>
             <Text style={styles.info}>Workshop name: {this.state.name}</Text>
+            <Text style={styles.info}>SkillSet: {this.state.skillSetName}</Text>
             <Text style={styles.info}>Start date: {moment(parseInt(this.state.startDate)).format('YYYY-MM-DD HH:mm')}</Text>
             <Text style={styles.info}>End date: {moment(parseInt(this.state.endDate)).format('YYYY-MM-DD HH:mm')}</Text>
             <Text style={styles.info}>Available place: {this.state.placeAvailable}</Text>
-            <Text style={styles.info}>Room ID: {this.state.roomId}</Text>
-            <Text style={styles.info}>SkillSet ID: {this.state.skillSetId}</Text>
+            <Text style={styles.info}>Room: CB{this.state.roomCampus} Level{this.state.roomLevel} {this.state.roomNumber}</Text>
           </View>
           <Button
             title="Confirm"
