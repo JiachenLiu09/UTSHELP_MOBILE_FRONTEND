@@ -28,7 +28,7 @@ class Profile extends React.Component {
 class Cancel extends React.Component {
   static navigationOptions = {
     tabBarIcon: tabBarIcon('book'),
-    tabBarLabel:'View my workshops'
+    tabBarLabel:'View my bookings'
   };
   render() {
     return (

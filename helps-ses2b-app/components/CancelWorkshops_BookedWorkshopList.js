@@ -5,7 +5,6 @@ import {
   //ListItem,
   Button,
   Icon,
-  StackNavigator
   //TouchableWithoutFeedback,
 } from 'react-native-elements';
 import {SafeAreaView, StyleSheet, ScrollView, StatusBar} from 'react-native';
@@ -17,7 +16,8 @@ export default class BookedWorkshopsPage extends React.Component {
     super(props);
     this.state = {
       studentId:'',
-      dataSource:[],
+      bookedWorkshops:[],
+      sessions: [],
       refresh: ''
     }
   }
@@ -33,7 +33,7 @@ export default class BookedWorkshopsPage extends React.Component {
         studentId: data
       })}
     )
-    fetch("http://utshelpmobileserver-env.eemrgf7eub.us-east-2.elasticbeanstalk.com:8888/bookedWorkshops",{
+    await fetch("http://utshelpmobileserver-env.eemrgf7eub.us-east-2.elasticbeanstalk.com:8888/bookedWorkshops",{
         method:'POST',
         mode: "cors",
         headers:{
@@ -47,7 +47,28 @@ export default class BookedWorkshopsPage extends React.Component {
     .then((response) => response.json())
     .then((responseJson) => {
       this.setState({
-        dataSource: responseJson
+        bookedWorkshops: responseJson
+      })
+    })
+    .catch((error) => {
+      console.log(error);
+      throw error;
+    })
+    fetch("http://utshelpmobileserver-env.eemrgf7eub.us-east-2.elasticbeanstalk.com:8888/sessions",{
+        method:'POST',
+        mode: "cors",
+        headers:{
+            Accept:'application/json',
+            'Content-Type':'application/json',
+        },
+        body:JSON.stringify({
+          studentId:this.state.studentId
+        })
+    })
+    .then((response) => response.json())
+    .then((responseJson) => {
+      this.setState({
+        sessions: responseJson
       })
     })
     .catch((error) => {
@@ -58,14 +79,45 @@ export default class BookedWorkshopsPage extends React.Component {
     render() {
       return (
         <View style={styles.container}>
+          <Text style={{ paddingBottom: 20, fontSize: 20, fontWeight: "bold"}}>Sessions</Text>
+          <ScrollView style={{height: 300}}>
+            <View style={styles.container}>
+              {this.state.sessions.map((u, i) => {
+                return (
+                  <Card
+                    key={i}
+                    title= {u.type}
+                    containerStyle={{padding: 0, paddingBottom: 25}}>
+                    <View style={{height: 60, flex: 1}}>
+                      <Button
+                        icon={<Icon name="code" color="#ffffff" />}
+                        buttonStyle={{
+                          borderRadius: 0,
+                          marginLeft: 0,
+                          marginRight: 0,
+                          marginBottom: 0,
+                        }}
+                        onPress={() => this.props.navigation.navigate('SessionDetails', {
+                          sessionId: u.sessionId
+                        })}
+                        title="View Details"
+                      />
+                    </View>
+                  </Card>
+                );
+              })}</View>
+          </ScrollView>
+          <View>
+            <Text> </Text>
+          </View>
+          <Text style={{ paddingBottom: 20, fontSize: 20, fontWeight: "bold"}}>Workshops</Text>
           <ScrollView style={(flex = 1)}>
             <View style={styles.container}>
-              {this.state.dataSource.map((u, i) => {
+              {this.state.bookedWorkshops.map((u, i) => {
                 return (
                   <Card
                     key={i}
                     title= {u.name}
-                    //image={require('../images/pic2.jpg')}
                     containerStyle={{padding: 0, paddingBottom: 25}}>
                     <View style={{height: 60, flex: 1}}>
                       <Text>
@@ -108,6 +160,7 @@ export default class BookedWorkshopsPage extends React.Component {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
+      flexDirection: "column"
     },
     actionButtonView:{
       flex: 1,
